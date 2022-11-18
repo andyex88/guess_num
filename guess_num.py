@@ -1,20 +1,20 @@
 import random
-begin = input('請決定隨機數字範圍開始值：')
+begin = input('Please enter a beginning value of your random number\'s range：')
 begin = int(begin)
-end = input('請決定隨機數字範圍結束值：')
+end = input('Please enter an ending value of your random number\'s range：')
 end = int(end)
 r = random.randint(begin, end)
 count = 0
 while True:
-	a = input('請猜數字： ')
+	a = input('Please guess a number： ')
 	a = int(a)
 	count = count + 1
 	if a == r:
-		print('終於答對了')
-		print('你猜了', count, '次')
+		print('You got it right!')
+		print('You have guessed', count, 'times')
 		break
 	elif a > r:
-		print('比答案大')
+		print('Your guess is more')
 	elif a < r:
-		print('比答案小')
-	print('你猜了', count, '次')
+		print('Your guess is less')
+	print('You have guessed', count, 'times')
