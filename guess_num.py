@@ -1,5 +1,9 @@
 import random
-r = random.randint(1, 100)
+begin = input('請決定隨機數字範圍開始值：')
+begin = int(begin)
+end = input('請決定隨機數字範圍結束值：')
+end = int(end)
+r = random.randint(begin, end)
 count = 0
 while True:
 	a = input('請猜數字： ')
